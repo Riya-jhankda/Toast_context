@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toast_mssg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/iv_alert"
+        android:layout_width="101dp"
+        android:layout_height="93dp"
+
+        android:src="@drawable/ic_baseline_notifications_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tv_mssg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Coustom Toast Is Ready !"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_alert"
+        app:layout_constraintStart_toEndOf="@+id/iv_alert"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
