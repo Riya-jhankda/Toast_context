@@ -14,10 +14,9 @@ class MainActivity : AppCompatActivity() {
             val name=et_name.text.toString()
             val age = et_age.text.toString().toInt()
             val country = et_country.text.toString()
+            val person =Person(name, country, age )
             Intent(this,SecondActivity::class.java).also{
-                it.putExtra("Extra_name",name)
-                it.putExtra("Extra_age",age)
-                it.putExtra("ExtraCountry",country)
+                it.putExtra("EXTRA_PERSON",person)
                 startActivity(it)
 
             }
